@@ -1,0 +1,129 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PDL",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#punctuations"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"match": "(//.*)$",
+					"name": "comment.line.pdl"
+				}
+			]
+		},
+		"sections": {
+			"patterns": [{
+					"name": "keyword.control.directive",
+					"match": "^(#(input|output|required|objective))($|\\s.*$)"
+				},
+				{
+					"name": "meta.preprocessor.section.pdl",
+					"match": "^(#(input|output|required|objective))($|\\s.*$)"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.pdl",
+					"match": "\\b(if|else|forall|exists)\\b"
+				},
+				{
+					"name": "storage.type.pdl",
+					"match": "\\b(int|real|bool|char)\\b"
+				},
+				{
+					"name": "constant.language.pdl",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "storage.type.function.pdl",
+					"match": "\\b(function)\\b"
+				},
+				{
+					"name": "keyword.other.pdl",
+					"match": "\\b(of|minimize|maximize)\\b"
+				},
+				{
+					"name": "entity.name.function.pdl",
+					"match": "\\b(in|and|or|not|xor|mod|summation|product|count|min|max|alldiff)\\b"
+				},
+				{
+					"name": "keyword.operator.word.pdl",
+					"match": "\\b(in|and|or|not|xor|mod|summation|product|count|min|max)\\b"
+				},
+				{
+					"name": "keyword.operator.pdl",
+					"match": "(\\+|-|\\*|/|\\=|!\\=|>|<|>=|<=|\\?|\\^|~)"
+				},
+				{
+					"name": "keyword.reserved.pdl",
+					"match": "\\b(return|main)\\b"
+				},
+				{
+					"name": "constant.numeric.pdl",
+					"match": "\\b(0(x|X))?([0-9])+\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.pdl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pdl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"punctuations": {
+			"patterns": [
+				{
+					"name": "punctuation.definition.begin.bracket.pdl",
+					"match": "\\["
+				},
+				{
+					"name": "punctuation.definition.end.bracket.pdl",
+					"match": "\\]"
+				},
+				{
+					"name": "punctuation.section.parens.begin.bracket.pdl",
+					"match": "\\("
+				},
+				{
+					"name": "punctuation.section.parens.end.bracket.pdl",
+					"match": "\\)"
+				},
+				{
+					"name": "punctuation.section.block.begin.bracket.pdl",
+					"match": "\\{"
+				},
+				{
+					"name": "punctuation.section.block.end.bracket.pdl",
+					"match": "\\}"
+				},{
+					"name": "punctuation.terminator.pdl",
+					"match": ";"
+				}
+			]
+		}
+	},
+	"scopeName": "source.pdl"
+}
