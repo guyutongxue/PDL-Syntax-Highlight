@@ -2,7 +2,7 @@
     "name": "pdl-syntax-highlight",
     "displayName": "PDL Syntax Highlight",
     "description": "Highlight your PDL (Problem Description Language) code.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Guyutongxue",
     "repository": "https://github.com/Guyutongxue/PDL-Syntax-Highlight",
     "engines": {

@@ -24,17 +24,17 @@
 				{
 					"match": "(//.*)$",
 					"name": "comment.line.pdl"
+				},{
+					"begin": "/\\*",
+					"end": "\\*/",
+					"name": "comment.block.pdl"
 				}
 			]
 		},
 		"sections": {
 			"patterns": [{
 					"name": "keyword.control.directive",
-					"match": "^(#(input|output|required|objective))($|\\s.*$)"
-				},
-				{
-					"name": "meta.preprocessor.section.pdl",
-					"match": "^(#(input|output|required|objective))($|\\s.*$)"
+					"match": "(^|\\s)(#(input|output|required|objective))\\b"
 				}
 			]
 		},

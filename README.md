@@ -8,7 +8,7 @@ PDL is a language designed by a certain lab at Peking University. This extension
 
 PDL (Problem Description Language) is a modeling language for specifying constraint optimization problems. When using PDL, users only need to list all constraints between the variables without indicating how to solve the problem -- the PDL runtime system will automatically design a feasible solving algorithm and generate the corresponding code.
 
-### Grammar
+### Syntax
 
 View [pdlteam/pdl-manual](https://github.com/pdlteam/pdl-manual) for detail. We students do have a Chinese version of this manual, but I'm afraid that I can't share it here. 
 
