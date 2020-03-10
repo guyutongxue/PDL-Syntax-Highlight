@@ -18,8 +18,8 @@ Make sure you have npm installed.
 
 ```bash
 npm install -g vsce
-git clone https://github.com/Guyutongxue/DevCppTheme.git
-cd DevCppTheme
+git clone https://github.com/Guyutongxue/PDL-Syntax-Highlight.git
+cd PDL-Syntax-Highlight
 vsce package
 ```
 
